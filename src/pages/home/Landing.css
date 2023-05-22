@@ -1,0 +1,12 @@
+
+.landing{
+    width:100%;
+    height:100vh;
+    background-image:url('../../images/bgland.jpg');
+    background-size:cover;
+}
+.image-overlay{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(#0c134fb4,#1d277dbb);
+}

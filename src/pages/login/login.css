@@ -1,0 +1,11 @@
+.login{
+    min-width:100%;
+    min-height:100vh;
+    background-image:url('../../images/bglogin.png');
+    background-size:cover;
+}
+.image-overlay{
+    min-width:100%;
+    min-height:100vh;
+    background-image:linear-gradient(#0c134fb4,#1d277dbb);
+}
