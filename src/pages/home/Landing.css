@@ -1,4 +1,7 @@
 
+*{
+    font-family: "poppins";
+}
 .landing{
     width:100%;
     height:100vh;
@@ -9,4 +12,33 @@
     width:100%;
     height:100vh;
     background-image:linear-gradient(#0c134fb4,#1d277dbb);
+}
+
+.image-overlay img{
+    margin:20px;
+    width:300px;
+    height:50px;
+}
+.landing-text{
+    margin-top:150px;
+    display:flex;
+    justify-content:center;
+    font-size:50px;
+    color: white;
+
+}
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+}
+.button1{
+    width:150px;
+    height:50px;
+    font-size: 18px;
+    display:inline-block;
+    color:black;
+    background-color:white;
+    border-radius:30px;
+    box-shadow:1px 0.5px 1rem black;
 }
