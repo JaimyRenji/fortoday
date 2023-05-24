@@ -13,7 +13,6 @@ function App(){
             <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
         </BrowserRouter>
-        
       );
     }
 export default App;
