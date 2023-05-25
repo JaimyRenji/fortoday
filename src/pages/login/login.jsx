@@ -32,7 +32,7 @@ export default function Login() {
                 <div className="login-main-btn">
                 <LoginSocialGoogle
             client_id={
-                "75856646229-i01p3cc3okhpfgubou36ab0ip0b9teu2.apps.googleusercontent.com","75856646229-719749bf351cr7sl96ervngqp6iabsim.apps.googleusercontent.com"
+                "75856646229-i01p3cc3okhpfgubou36ab0ip0b9teu2.apps.googleusercontent.com"
             }
             scope="openid profile email"
             discoveryDocs="claims_supported"

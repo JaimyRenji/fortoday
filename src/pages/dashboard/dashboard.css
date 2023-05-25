@@ -1,3 +1,39 @@
-body{
-    background-color: aqua;
+.sidebar{
+    width:20%;
+    height:100vh;
+    background-color: #0C134F;
+}
+.logo1{
+    margin:20px;
+    width:250px;
+    height:40px;
+}
+.profile-pic{
+    width:50px;
+    height:50px;
+    background-color: aliceblue;
+    margin-left:40%;
+    border-radius: 50%;
+    margin-top:75px;
+}
+.welcome{
+    color:white;
+    font-size:20px;
+    text-align: center;
+}
+.content{
+    width:80%;
+    height:100vh;
+    background-color: #1D267D;
+}
+.main{
+    width:100%;
+    display:flex;
+}
+.toggle{
+    display:block;
+    margin:auto;
+    margin-top:300px;
+    color:#D4ADFC;
+    height:40px;
 }
