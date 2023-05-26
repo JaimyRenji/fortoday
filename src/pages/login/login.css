@@ -34,9 +34,9 @@
     height:25px;
 }
 .login-div{
+    padding:10px;
     display:flex;
     margin:auto;
-    align-items:center;
     gap:10px;
 
 }

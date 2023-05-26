@@ -17,14 +17,16 @@
     margin-top:75px;
 }
 .welcome{
+    margin-top:30px;
     color:white;
     font-size:20px;
     text-align: center;
 }
-.content{
+.app{
     width:80%;
     height:100vh;
     background-color: #1D267D;
+    padding:15px;
 }
 .main{
     width:100%;
@@ -36,4 +38,27 @@
     margin-top:300px;
     color:#D4ADFC;
     height:40px;
+}
+#addNew {
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C134F;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:auto;
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 15px;
+}
+.plus{
+    height:30px;
+    color: #D4ADFC;
+}
+.head-task{
+   text-align: center;
+   color: aliceblue;
+   padding-top:80px;
 }
