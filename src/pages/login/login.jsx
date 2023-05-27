@@ -41,7 +41,7 @@ export default function Login() {
             onReject={handleLoginReject}
             >
                 <button className="login-btn"><div className="login-div"><img className="login-img"src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2008px-Google_%22G%22_Logo.svg.png"></img>
-                <p><b>Sign up with google</b></p></div></button>
+                <p className="log-text"><b>Sign up with google</b></p></div></button>
             </LoginSocialGoogle>
                 </div>
                 </div>

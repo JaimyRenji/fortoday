@@ -32,9 +32,9 @@
 .login-img{
     width:25px;
     height:25px;
+    padding-top:10px;
 }
 .login-div{
-    padding:10px;
     display:flex;
     margin:auto;
     gap:10px;

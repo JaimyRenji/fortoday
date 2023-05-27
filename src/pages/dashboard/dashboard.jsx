@@ -5,6 +5,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faToggleOn,faPlusSquare} from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+const textInput = document.getElementById("textInput");
+const dateInput = document.getElementById("dateInput");
+const textarea = document.getElementById("textarea");
+const msg = document.getElementById("msg");
+const tasks = document.getElementById("tasks");
+const add = document.getElementById("add");
+// Assuming 'form' is the correct selector for your form element
+const form = document.querySelector('form');
+
+// Ensure 'form' is not null before adding the event listener
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formValidation();
+  });
+}
+
+const formValidation = () => {
+  // Assuming 'textInput' and 'msg' are correctly defined
+  const textInput = document.querySelector('#textInput');
+  const msg = document.querySelector('#msg');
+
+  if (textInput.value === "") {
+    console.log("failure");
+    msg.innerHTML = "Task cannot be blank";
+  } else {
+    console.log("success");
+    msg.innerHTML = "";
+  }
+};
+
+
 export default function Dashboard() {
     return (
         <div className="main">
