@@ -3,10 +3,11 @@ import "./dashboard.css";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faToggleOn,faPlusSquare} from '@fortawesome/free-solid-svg-icons';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import CustomForm from "../../components/custom";
 export default function Dashboard() {
+  const addTask=(task)=>{
+    console.log(task)
+  }
     return (
         <div className="main">
         <div className="sidebar">
@@ -16,57 +17,12 @@ export default function Dashboard() {
             <FontAwesomeIcon className="toggle" icon={faToggleOn} />
         </div>
         <div className="app">
-        <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
-    <span>Add New Task..</span>
-    <FontAwesomeIcon className="plus" icon={faPlusSquare} />
+          <CustomForm addTask={addTask}/>
+          <header>
+           <h1 className="head-task">TASK LIST</h1>
+          </header>
     </div>
-    <h5 className="head-task"><b>TASK LIST</b></h5>
-    <div id="tasks"></div>
-    </div>
-    <form
-  class="modal fade"
-  id="form"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <p>Task Title</p>
-        <input type="text" class="form-control" name="" id="textInput" />
-        <div id="msg"></div>
-        <br />
-        <p>Due Date</p>
-        <input type="date" class="form-control" name="" id="dateInput" />
-        <br />
-        <p>Description</p>
-        <textarea
-          name=""
-          class="form-control"
-          id="textarea"
-          cols="30"
-          rows="5"
-        ></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" id="add" class="btn btn-primary">Add</button>
-      </div>
-    </div>
-  </div>
-</form>
+    
   </div>
     );
 }

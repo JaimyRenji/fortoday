@@ -39,26 +39,39 @@
     color:#D4ADFC;
     height:40px;
 }
-#addNew {
+.wrapper{
+    display:flex;
+    gap:5px;
+    margin-left:30%;
+}
+.input{
     width:400px;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
     background-color: #0C134F;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin:auto;
+    border:none;
+    outline:none;
     margin-top: 30px;
     color: aliceblue;
     font-size: 15px;
 }
 .plus{
     height:30px;
-    color: #D4ADFC;
+    color:#0C134F;
+}
+.btn{
+    display:inline-block;
+    height:40px;
+    margin-top:30px;
+    border-radius:10px;
+    background-color: #D4ADFC;
 }
 .head-task{
    text-align: center;
    color: aliceblue;
-   padding-top:80px;
+   padding-top:60px;
 }
