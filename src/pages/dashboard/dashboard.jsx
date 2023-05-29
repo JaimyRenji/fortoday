@@ -2,7 +2,7 @@ import React from "react";
 import "./dashboard.css";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faToggleOn,faPlusSquare} from '@fortawesome/free-solid-svg-icons';
+import {faSun,faPlusSquare} from '@fortawesome/free-solid-svg-icons';
 import CustomForm from "../../components/custom";
 export default function Dashboard() {
   const addTask=(task)=>{
@@ -14,7 +14,8 @@ export default function Dashboard() {
             <a href="/"><img className="logo1" src={logo}></img></a>
             <img className="profile-pic" src={localStorage.getItem("photo")}></img>
             <p className="welcome">Welcome <b>{localStorage.getItem("name")}!</b></p>
-            <FontAwesomeIcon className="toggle" icon={faToggleOn} />
+            <div className="icon-sun">
+            <FontAwesomeIcon className="toggle" icon={faSun} /></div>
         </div>
         <div className="app">
           <CustomForm addTask={addTask}/>
